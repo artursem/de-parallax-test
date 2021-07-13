@@ -15,9 +15,23 @@ nav {
     display: flex;
     padding: 3rem 10rem;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
-/* button! */
+.button {
+    display: inline-flex;
+    padding: .5rem 1.5rem;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 2rem;
+    text-decoration: none;
+    color: #fff;
+    transition: color .3s ease-in, background .3s ease-in;
+}
+.button:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #555;
+}
 .container img {
     position: absolute;
     width: 100%;
@@ -40,6 +54,10 @@ nav {
     min-height: 100vh;
     z-index: 2;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .content-images {
     display: flex;
@@ -47,6 +65,10 @@ nav {
     align-items: center;
     min-height: 60vh;
     text-align: center;
+    width: 90vw;
+}
+.content-images div {
+    /* flex: 1; */
 }
 
 .text {
